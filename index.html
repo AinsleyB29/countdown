@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+body {
+  background-color:
+    silver;
+  font-family: sans-serif;
+  color: green;
+}
+</style>
+</head>
+<body>
+    <h1 id="timer">5</h1>
+<script id="jsbin-javascript">
+let timerElement = document.getElementById("timer");
+let timeRemaining = 5
+
+function countdown () {;
+  timeRemaining = timeRemaining -1
+  if (timeRemaining <=0) {
+    timerElement.innerText= "It's Alive! (Refresh to start over)";
+  } 
+  else {
+  timerElement.innerText= timeRemaining;
+  }
+}
+
+setInterval(countdown, 1000);
+</script>
+
+
+<script id="jsbin-source-css" type="text/css">body {
+  background-color:
+    silver;
+  font-family: sans-serif;
+  color: green;
+}</script>
+
+<script id="jsbin-source-javascript" type="text/javascript">let timerElement = document.getElementById("timer");
+let timeRemaining = 5
+
+function countdown () {;
+  timeRemaining = timeRemaining -1
+  if (timeRemaining <=0) {
+    timerElement.innerText= "It's Alive! (Refresh to start over)";
+  } 
+  else {
+  timerElement.innerText= timeRemaining;
+  }
+}
+
+setInterval(countdown, 1000);</script></body>
+</html>
